@@ -1,0 +1,29 @@
+############################################
+#             1.1 Sélecteurs               #
+############################################
+1. Sélectionnez tous les liens dans la navigation.
+>> .main-nav a
+
+2. Sélectionnez uniquement le lien actif.
+>> a.active
+
+3. Sélectionnez l'article qui a la classe featured.
+>> article.featured
+
+4. Sélectionnez le premier paragraphe de chaque article.
+>> article p:first-of-type
+
+5. Sélectionnez les éléments <li> pairs.
+>> li:nth-child(even)
+
+############################################
+#             1.2 Spécificité              #
+############################################
+1. Classez ces sélecteurs par spécificité croissante : p, .text, #main, p.text, #main .text p
+>> p  <  .text  <  p.text  <  #main  <  #main .text p
+
+2. Si deux règles ont la même spécificité, laquelle gagne ?
+>> La dernière déclarée dans le fichier CSS gagne
+
+3. Pourquoi faut-il éviter !important ?
+>> !important casse le fonctionnement normal de la spécificité. (exemple dans le fichier style.css -> tous les p change le couleur a -blue- même si on a (article p:first-of-type) plus spécifique)

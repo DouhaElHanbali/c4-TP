@@ -2,6 +2,12 @@ body {
     background-color: #e0e6f6;
 }
 
+/*
+############################################
+#              1.1 Sélecteurs              #
+############################################
+*/
+
 /* Sélectionnez tous les liens dans la navigation */
 .main-nav a {
     text-decoration: none;
@@ -33,4 +39,9 @@ article p:first-of-type {
 li:nth-child(even) { 
     text-decoration: underline #7c2220;
     font-style: italic;
+}
+
+/* !important */
+p { 
+    /*color: blue !important; */
 }
