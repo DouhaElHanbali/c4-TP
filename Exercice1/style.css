@@ -1,0 +1,36 @@
+body {
+    background-color: #e0e6f6;
+}
+
+/* Sélectionnez tous les liens dans la navigation */
+.main-nav a {
+    text-decoration: none;
+    color: #7c2220;
+}
+
+/* Sélectionnez uniquement le lien actif */
+a.active {
+    color: #5f2119;
+    background-color: #cd939586;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Sélectionnez l'article qui a la classe --featured-- */
+article.featured {
+    font-weight: bold;
+    color: #72422c;
+}
+
+/* Sélectionnez le premier paragraphe de chaque article */
+article p:first-of-type {
+    color: #685652;
+    margin-left: 12px;
+}
+
+/* Sélectionnez les éléments <li> pairs */
+/*even:2,4,6...*/
+li:nth-child(even) { 
+    text-decoration: underline #7c2220;
+    font-style: italic;
+}
