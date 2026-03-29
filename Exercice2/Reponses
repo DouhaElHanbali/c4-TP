@@ -1,0 +1,29 @@
+############################################
+#      2.1 Comprendre le Box Model         #
+############################################
+1. Avec (box-sizing: content-box (défaut)), quelle est la largeur totale visible de .box ?
+>> width + padding-left + padding-right + border-left + border-right 
+= 300px + 20px + 20px + 5px + 5px = 350px
+
+2. Avec (box-sizing: border-box), quelle est la largeur totale visible ?
+>> largeur totale = 300px 
+(300px inclue border et padding => donc le navigateur rendre tous le contenu dans 300px)
+
+3. Écrivez le reset CSS universel pour box-sizing
+>> * {
+        border-sizing: border-box;
+    }
+
+############################################
+#        2.2 Centrer un élément            #
+############################################
+1. Centrez horizontalement un élément <div> de 600px de large, puis centrez-le aussi verticalement dans la page.
+>> body {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+    div {
+        width: 600px;
+        margin: 0 auto;
+    }
