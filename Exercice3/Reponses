@@ -1,29 +1,103 @@
 ############################################
-#             .               #
+#         3.1 Barre de navigation          #
 ############################################
-1. 
->> 
+1. Créez une barre de navigation horizontale avec un logo à gauche et des liens à droite :
+<nav class="navbar">
+  <div class="logo">MonSite</div>
+  <ul class="nav-links">
+    <li><a href="#">Accueil</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
 
-2. 
->> 
+>> .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px;
+    background-color: #d8b097;
 
-3. 
->> 
+}
 
-4. 
->> 
+.nav-links{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    list-style: none;
+    color: #3f211c;
+}
 
-5. 
->> 
+.nav-links a {
+  color: #3f211c;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 ############################################
-#             .               #
+#        3.2 Cartes de même hauteur        #
 ############################################
-1. 
->> 
+1. Créez 3 cartes côte à côte avec un footer qui reste toujours en bas :
+<div class="cards">
+  <div class="card">
+    <h3>Carte 1</h3>
+    <p>Contenu court.</p>
+    <a href="#" class="card-link">En savoir plus</a>
+  </div>
+  <div class="card">
+    <h3>Carte 2</h3>
+    <p>Contenu beaucoup plus long pour tester l'alignement vertical des boutons.</p>
+    <a href="#" class="card-link">En savoir plus</a>
+  </div>
+  <div class="card">
+    <h3>Carte 3</h3>
+    <p>Contenu moyen.</p>
+    <a href="#" class="card-link">En savoir plus</a>
+  </div>
+</div>
 
-2. 
->> 
+>> .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px;
+    background-color: #d8b097;
 
-3. 
->> 
+}
+
+.nav-links{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    list-style: none;
+    color: #3f211c;
+}
+
+.nav-links a {
+  color: #3f211c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    margin: 15px 0px;
+    padding: 0 10px;
+    display: flex;
+    flex: 1; /* chaque carte prend la même largeur */
+    flex-direction: column;
+    border: 1px solid #48252f;
+}
+
+.card-link {
+  margin-top: auto;
+  font-style: italic;
+  text-decoration: none;
+  color: #48252f;
+}
