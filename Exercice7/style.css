@@ -1,8 +1,15 @@
-############################################
-#            7.1 Bouton animé              #
-############################################
-1. Créez un bouton avec des transitions au survol :
->> 
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    gap: 30px; /* space between spinner and button */
+}
+
 .btn {
   padding: 15px 30px;
   font-size: 18px;
@@ -20,11 +27,6 @@
   transform: translate(100px, -50px) rotate(-10deg);
 }
 
-############################################
-#       7.2 Animation de chargement        #
-############################################
-1. Créez un spinner de chargement avec @keyframes :
->> 
 .spinner {
   width: 50px;
   height: 50px;
