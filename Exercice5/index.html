@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Base mobile */
+      * {
+        box-sizing: border-box; /* to fix le débordement */
+      }
+      .container {
+        width: 100%;
+        padding: 15px;
+      }
+
+      .nav-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .content {
+        display: block;
+      }
+
+      .sidebar {
+        display: none;
+      }
+      /* Base tablette */
+      @media (min-width: 768px) {
+        /* to make the na bar horizontal */
+        .nav-menu {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .content {
+          display: flex;
+          gap: 20px;
+        }
+
+        .sidebar {
+          display: block;
+          flex: 0 0 30%;
+          background-color: rgb(208, 208, 255);
+        }
+
+        .main-content {
+          flex: 1;
+        }
+      }
+
+      /* Base desktop */
+      @media (min-width: 992px) {
+        .container {
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        .sidebar {
+          flex: 0 0 25%; /* on ajuste juste la largeur */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-menu">
+        <a href="#">Accueil</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <div class="content">
+        <aside class="sidebar">Sidebar</aside>
+
+        <main class="main-content">Contenu principal</main>
+      </div>
+    </div>
+  </body>
+</html>
