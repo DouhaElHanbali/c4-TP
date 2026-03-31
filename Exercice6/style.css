@@ -1,0 +1,33 @@
+:root {
+  --bg-color: #e8e1d1;
+  --text-color: #7c4e39;
+  --primary-color: #443025;
+  --card-bg: #b48c86;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #ec9c9d;
+  border: none;
+  padding: 10px 15px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 2px;
+}
+
+body.dark-theme {
+  --bg-color: #191919;
+  --text-color: #d6d6d6;
+  --primary-color: #410401;
+  --card-bg: #434542;
+}

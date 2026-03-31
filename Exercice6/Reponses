@@ -1,29 +1,18 @@
 ############################################
-#             .               #
+#         6.1 Système de couleurs          #
 ############################################
-1. 
+1. Créez un système de variables CSS pour un thème clair et sombre :
 >> 
+:root {
+  --bg-color: #e8e1d1;
+  --text-color: #7c4e39;
+  --primary-color: #443025;
+  --card-bg: #b48c86;
+}
 
-2. 
->> 
-
-3. 
->> 
-
-4. 
->> 
-
-5. 
->> 
-
-############################################
-#             .               #
-############################################
-1. 
->> 
-
-2. 
->> 
-
-3. 
->> 
+body.dark-theme {
+  --bg-color: #191919;
+  --text-color: #d6d6d6;
+  --primary-color: #410401;
+  --card-bg: #434542;
+}
